@@ -1,0 +1,122 @@
+body{
+    
+    font-size:12px;
+}
+.caixa-banner{
+    background-image: url(../img/banner-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo1{
+    text-shadow: 2px 2px 2px black;
+    font-size: 2rem;
+}
+
+.subtitulo1{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px #962dcf;
+}
+
+.link-sobre{
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #5a0385;
+    font-weight: bold;
+    background-color: white;
+    padding: 8px 28px;
+    border-radius: 20px;
+}
+/*Passar por cima de botão*/
+.link-sobre:hover{
+    background-color: violet;
+}
+/*Clique de botão*/
+.link-sobre:active{
+    background-color: red;
+}
+
+.titulo-sobre{
+    margin-left: 20px;
+    font-size: 1.9rem;
+    color: #413e3e;
+}
+
+.caixa-sobre{
+    display:flex;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+.lado1{
+    width: 35%;
+}
+
+.margin-texto{
+    margin-bottom: 40px;
+}
+
+.lado2{
+    width: 35%;
+}
+
+.link-cv{
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    background-color: #690b9c;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.caixa-links{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+img{ 
+    width: 30%;
+    padding-top: 10px;
+}
+
+.links{
+    background-color: #b74aed;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.links:hover{
+    transform: scale(1.1);
+}
+ /*Desktop*/
+@media screen and (max-width: 768px){
+    .caixa-sobre{
+     flex-direction: column;
+    }
+    .lado1,
+    .lado2{
+        width:100%;
+    }
+}
